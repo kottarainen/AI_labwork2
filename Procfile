@@ -1,1 +1,1 @@
-web: python labwork2.py
+web: python labwork2/labwork2.py
