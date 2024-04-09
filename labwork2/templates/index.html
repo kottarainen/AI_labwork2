@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,16 +18,16 @@
 
         .container {
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             max-width: 400px;
             width: 100%;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #333;
         }
 
@@ -40,31 +40,36 @@
         input[type="text"],
         button {
             width: 100%;
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 8px;
             box-sizing: border-box;
             font-size: 16px;
             color: #333;
+            outline: none;
         }
 
         button {
-            background-color: #4caf50;
+            background-color: #007bff; /* Blue */
             color: #fff;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            background-image: linear-gradient(to bottom, #007bff, #0056b3); /* Gradient */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* More shadow */
         }
 
             button:hover {
-                background-color: #45a049;
+                background-color: #0056b3; /* Darker Blue */
             }
 
         .response {
             margin-top: 20px;
-            padding: 10px;
+            padding: 20px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 8px;
             color: #333;
         }
     </style>
@@ -83,7 +88,6 @@
             <input type="text" id="image_url" name="image_url" required>
             <button type="submit">Predict</button>
         </form>
-        <div class="response" id="response"></div>
     </div>
 </body>
 </html>
